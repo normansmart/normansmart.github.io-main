@@ -1,0 +1,96 @@
+body{
+   color: #333a40;
+    background-color: #fafafa;
+    font-family: 'Raleway' , sans-serif;
+    width: 100%;
+    height: auto;
+  
+    
+}
+
+
+.navigation-bar{
+    width: 100%;
+    height: 8%;
+    margin-top: 0%;
+   
+}
+
+
+.navigation{
+    width: 100%;
+
+}
+.navigation-options{
+    width: 100%;
+}
+
+.nav-home{
+    color: rgb(102, 102, 163);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 60%;
+}
+
+
+
+
+a{
+    color: rgb(97, 97, 97);
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(102, 102, 163);
+
+}
+
+
+.page-wrapper{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+}
+
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+.text{
+    color: #333a40;
+    font-size: 1.5rem;
+}
+
+.link{
+    color: rgb(102, 102, 163);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.icon-container{
+    width: 100%;
+    margin: auto;
+
+}
+
+.icon{
+    width: 20%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+  
+}
+
+
+

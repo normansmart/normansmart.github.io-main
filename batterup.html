@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UX | PROC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/batterup.css">
+    <link rel="icon" href="images/home/home-logo.png" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+
+
+    <nav>
+        <ul>
+
+
+            <li><a href="#section-2">Research</a></li>
+
+            <li><a href="#section-6">Design</a></li>
+
+            <li><a href="#section-5">Reflections</a></li>
+
+            <li><a href="#section-7">Thomas Podschelne</a></li>
+
+            <li> <a id="back-button" href="index 1.html">Back</a></li>
+
+        </ul>
+    </nav>
+
+
+
+
+    <div class="page-wrapper">
+
+        <div class="banner-container">
+
+            <img src="images/ux/batter up/banner.png">
+        </div>
+
+        <div class="container">
+
+            <div class="overview-container">
+                <div class="overview">
+                    
+                    <p> Batter Up is a website concept I design for a good friend named Thomas Podschelne, who I had the
+                        pleasure of meeting and working with at a grocery store. He was a skilled baker, and skilled is
+                        an understatement. Thomas had a dream of opening his own bakery and I offered to design and make
+                        him one. Unfortunately due to health concerns he took a leave of absence and soon after was
+                        transferred to a different store.
+
+                    </p>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <main>
+                <section id="section-1">
+                    <!-- set this to section and each section has an individual number that the links will be based on. When the link is clicked it scrolls to the given section-->
+
+                    <h2> CHALLENGE </h2>
+
+                    <p> Create an ecommerce website that appeals to a variety of people, including a streamlined payment
+                        process and developing an attractive visual aesthetic.
+
+
+                    </p>
+
+
+
+                </section>
+
+
+                <section id="section-2">
+
+                    <h2> RESEARCH</h2>
+                    <p> I studied the necessities of e-commerce business to see how i can formulate the structure of the
+                        site.
+                        Since it’s a bakery, it was fairly simple from the get-go, but my goal was to make the
+                        experience as easy and simple for the user.
+
+
+                        <br>
+                        The site would need to:
+                        <br>
+                        - Have a simple easy to use navigation structure
+                        <br>
+                        - Streamline menu and ordering into one
+                        <br>
+                        - Allow users to view the status of their orders
+                        <br>
+                        - A simple payment processing system
+                        <br> <br>
+
+                        I drafted the user tree and wireframe structure
+
+
+                    </p>
+                    <img class="display-image" src="images/ux/batter up/flow.jpg">
+                    <img class="display-image" src="images/ux/batter up/wireframe.jpg">
+
+                </section>
+
+                <section id="section-6">
+
+                    <h2> DESIGN </h2>
+                    <img class="colour" src="images/ux/batter up/colours.png">
+
+                    <img class="screens" src="images/ux/batter up/menu.png">
+                    <img class="screens" src="images/ux/batter up/order.png">
+                    <img class="screens" src="images/ux/batter up/home.png">
+
+
+
+
+                </section>
+
+
+
+                <section id="section-5">
+
+                    <h2> REFLECTION </h2>
+
+                    <h3> MENU DISPLAY </h3>
+
+                    <img class="measurment-image-1" src="images/ux/batter up/old 2.jpg">
+
+                    <p class="measurment-image-1-text"> The original menu display featured each category with its
+                        respective image and a further click away to view the page for those menu items. I later
+                        found this to be unnecessary and scrapped the manu page altogether in place of an online
+                        ordering page where users can just pick categories they want and choose from an immediate
+                        list.
+
+
+                    </p>
+
+
+                </section>
+
+
+
+                <section id="section-7">
+
+                    <h2> Thomas Podschelne </h2>
+
+                    <h3> TO YOU, THOMAS </h3>
+
+                    <img class="measurment-image-1" src="images/ux/batter up/tom.jpg">
+
+                    <p class="measurment-image-1-text"> Thomas Podschelne is a hard-working man, Iraq war veteran
+                        and the humblest man you'll every come across. He had an unfortunate experience with a PTSD
+                        relapse that and was declared missing for a time. When he was found, he went on leave for
+                        some months and returned but was soon after trasnferred to a different store and I haven't
+                        been in contact with him since.
+                        <br>
+                        Thomas, it has been the greatest honour working with you. I hope you one day persue your
+                        dream of opening that bakery and I will be right there to help you as much as I can.
+                        <br> <br>
+                        Thank you for your service.
+
+
+
+
+                    </p>
+
+
+                </section>
+
+
+            </main>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+
+        let mainNavLinks = document.querySelectorAll("nav ul li a");
+        let mainSections = document.querySelectorAll("main section");
+
+        let lastId;
+        let cur = [];
+
+        // This should probably be throttled.
+        // Especially because it triggers during smooth scrolling.
+        // https://lodash.com/docs/4.17.10#throttle
+        // You could do like...
+        // window.addEventListener("scroll", () => {
+        //    _.throttle(doThatStuff, 100);
+        // });
+        // Only not doing it here to keep this Pen dependency-free.
+
+        window.addEventListener("scroll", event => {
+            let fromTop = window.scrollY;
+
+            mainNavLinks.forEach(link => {
+                let section = document.querySelector(link.hash);
+
+                if (
+                    section.offsetTop <= fromTop &&
+                    section.offsetTop + section.offsetHeight > fromTop
+                ) {
+                    link.classList.add("current");
+                } else {
+                    link.classList.remove("current");
+                }
+            });
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

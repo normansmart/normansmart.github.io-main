@@ -1,0 +1,135 @@
+body{
+    color: #333a40;
+     background-color: #fafafa;
+     font-family: 'Raleway' , sans-serif;
+     width: 100%;
+     height: auto;
+   
+     
+ }
+ 
+ 
+ .navigation-bar{
+     width: 100%;
+     height: 8%;
+     margin-top: 0%;
+    
+ }
+ 
+ 
+ .navigation{
+     width: 100%;
+ 
+ }
+ .navigation-options{
+     width: 100%;
+ }
+ 
+ .nav-home{
+     color: rgb(102, 102, 163);
+     font-weight: bold;
+     font-size: 1.5rem;
+     margin-right: 60%;
+ }
+ 
+ 
+ 
+ 
+ a{
+     color: rgb(97, 97, 97);
+     font-weight: lighter;
+     font-size: 1.5em;
+     text-decoration: none;
+ }
+ 
+ a:hover{
+     color: rgb(102, 102, 163);
+ 
+ }
+
+
+.page-wrapper{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.itw-container{
+width: 100%;
+margin-bottom: 5%;
+
+}
+
+.itw{
+    font-weight: bold;
+    font-size: 1.3rem;
+float: left;
+
+margin-top: 1%;
+margin-bottom: 5%;
+}
+
+.itw-icon{
+    width: 4%;
+    float: left;
+}
+
+
+
+.list-container{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    
+}
+
+
+.option-shanyang{
+    width: 45%;
+    height: 500px;
+  float: left;
+  margin-right: 9%;
+ 
+}
+
+
+.option-batterup{
+    width: 45%;
+    height: 400px;
+    float: left;
+   
+}
+
+.option-image{
+    width: 100%;
+}
+
+
+
+
+.cog-container{
+    width: 100%;
+   
+}
+
+.cog{
+    width: 10%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.cog {
+    -webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}

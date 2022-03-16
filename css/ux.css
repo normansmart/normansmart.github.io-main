@@ -1,0 +1,66 @@
+html , body{
+    width: 100%;
+    height: 100%;
+   overflow: hidden;    
+ }
+
+
+
+ .ux-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     z-index: 0;
+     background-image: url(ux-background.png);
+     background-size: cover;
+ }
+
+ #star-line{
+     width: 90%;
+     display: block;
+     margin: auto;
+ }
+
+
+ .projects{
+    width: 100%;
+    height: 100%;
+ }
+
+ .projects img{
+    position: absolute;
+    width: 7%;
+    z-index: 0;
+ }
+
+ .project-link{
+   z-index: 1;
+   opacity: 0;
+   transition: all .1s ease-in-out;
+ }
+
+ .project-link:hover{
+   opacity: 1;
+   transform: scale(2.3);
+ }
+
+
+ #bunkbud{
+    top: 55%;
+    left: 20%;
+ }
+
+
+#batterup{
+   top: 73%;
+   left: 35%;
+}
+ 
+ 
+
+
+
+

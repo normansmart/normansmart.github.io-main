@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Norman Smart UX Designer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" href="images/home/home-logo.png" type="image/gif" sizes="16x16">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="parallax">
+
+
+
+
+
+    <div class="body-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="description-container">
+
+
+
+
+            <div class="title-container">
+
+
+                <h1 class="title"> NORMAN <br>SMART </h1>
+
+                <p class="sub-title">USER EXPERIENCE/INTERFACE DESIGNER </p>
+
+
+
+
+                <div id="switch">
+
+                    <button class="btn active" id="work" style="float: left;"> <img class="button"
+                            src="images/home/uxbutton.png"><br>Portfolio</button>
+
+
+                    <button class="btn" id="logofolio"> <img class="button"
+                            src="images/home/logobutton.png"><br>Logofolio</button>
+
+                    <button class="btn" id="about" style="float: right;"> <img class="button"
+                            src="images/home/aboutbutton.png"><br>About</button>
+
+
+                </div>
+
+
+
+
+                <div class="title-names">
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <div class="project-container">
+
+
+
+            <div class="uxwork">
+
+                <div class="ring">
+
+                    <div class="dot dot--outer" style=" border: none;">
+                        <a href="fitmi.html">
+                            <img class="fitmi" src="images/home/drip.png">
+                        </a>
+
+
+                    </div>
+                </div>
+
+
+                <div class="ring" id="inner-circle1">
+
+                    <div class="dot dot--mid" style=" border: none;">
+                        <a href="proc.html">
+                            <img class="proc" src="images/home/regimen.png">
+                        </a>
+
+
+                    </div>
+                </div>
+
+
+                <div class="ring" id="inner-circle2">
+
+                    <div class="dot dot--inner" style=" border: none;">
+                        <a href="bunkbud.html">
+                            <img class="bunkbud" src="images/home/bunkbud.png">
+                        </a>
+
+
+                    </div>
+                </div>
+
+
+                <div class="ring" id="inner-circle3">
+                    <img class="portfolio" src="images/home/portfolio.png">
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="gdwork" style="display: none;">
+
+
+                <img id="ed" onclick="currentSlide(3)" src="images/design/logos/3dplaceholder.png">
+
+                <img id="proc" onclick="currentSlide(7)" src="images/design/logos/procplaceholder.png">
+
+                <img id="langbits" onclick="currentSlide(6)" src="images/design/logos/langbitsplaceholder.png">
+
+                <img id="bunk" onclick="currentSlide(1)" src="images/design/logos/bunkbudplaceholder.png">
+
+                <img id="batter" onclick="currentSlide(2)" src="images/design/logos/batterupplaceholder.png">
+
+                <img id="fit" onclick="currentSlide(4)" src="images/design/logos/fitmiplaceholder.png">
+
+                <img id="jovan" onclick="currentSlide(5)" src="images/design/logos/jovanplaceholder.png">
+
+                <img id="shan" onclick="currentSlide(8)" src="images/design/logos/shanyangplaceholder.png">
+
+                <img id="thimble" onclick="currentSlide(9)" src="images/design/logos/thimblecadplaceholder.png">
+
+
+
+                <svg>
+                    <line x1="52.5%" y1="47.5%" x2="47.5%" y2="7.5%" stroke-dasharray="10" stroke-width="4" />
+
+                    <line x1="52.5%" y1="47.5%" x2="26.5%" y2="21.5%" stroke-dasharray="10" stroke-width="3" />
+
+                    <line x1="26.5%" y1="21.5%" x2="10%" y2="35%" stroke-dasharray="5 2" stroke-width="2" />
+
+                    <line x1="52.5%" y1="47.5%" x2="76%" y2="66%" stroke-dasharray="10 2 4" stroke-width="2" />
+
+                    <line x1="52.5%" y1="47.5%" x2="31%" y2="66%" stroke-width="4" />
+
+                    <line x1="47.5%" y1="7.5%" x2="81.5%" y2="21.5%" stroke-dasharray="4 1 2" /> stroke-width="3" />
+
+                    <line x1="31%" y1="66%" x2="20%" y2="85%" stroke-dasharray="4 1 2" stroke-width="3" />
+
+                    <line x1="31%" y1="66%" x2="86.5%" y2="86.5%" stroke-dasharray="4 1 2 3" stroke-width="3" />
+
+
+
+                </svg>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="gd-logos" style="display: none;">
+
+                <div class="slideshow-container">
+
+
+                    <div class="mySlides fade">
+                        <img class="bunklogo" src="images/home/logo display/bunkbud.png">
+                    </div>
+
+
+                    <div class="mySlides fade ">
+                        <img class="batterlogo" src="images/home/logo display/batterup.png">
+                    </div>
+
+                    <div class="mySlides fade ">
+                        <img class="edlogo" src="images/home/logo display/3ducators.png">
+                    </div>
+
+                    <div class="mySlides fade ">
+                        <img class="fitlogo" src="images/home/logo display/fitmi.png">
+                    </div>
+
+                    <div class="mySlides fade ">
+                        <img class="jovanlogo" src="images/home/logo display/jovan.png">
+                    </div>
+
+                    <div class="mySlides fade ">
+                        <img class="langbitslogo" src="images/home/logo display/langbits.png">
+                    </div>
+
+                    <div class="mySlides fade ">
+                        <img class="proclogo" src="images/home/logo display/proc.png">
+                    </div>
+
+                    <div class="mySlides fade ">
+                        <img class="shanlogo" src="images/home/logo display/shan yang.png">
+                    </div>
+
+                    <div class="mySlides fade ">
+                        <img class="thimblecadlogo" src="images/home/logo display/thimblecad.png">
+                    </div>
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="back">&#x2715;</a>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="aboutme-containter">
+
+
+                <div class="aboutme">
+
+                    <img class="profilepic" src="images/home/profilepic.png">
+
+                    <div class="about-container">
+
+                        <p class="about">
+                            Hello, I'm Norm.
+                            I love creating simple and meaningful
+                            experiences for people.
+
+                        </p>
+
+
+                        <div class="social-container">
+
+                            <a href="images/home/resume.pdf" target="_blank">
+                            <div class="social">
+                                <img src="images/home/resume-icon.png">
+                                <p class="social-name"> RESUME </p>
+                            </div>
+                        </a>
+
+
+                        <a href="mailto: normansmart14@gmail.com"> 
+                            <div class="social">
+                                <img src="images/home/email-icon.png">
+                                <p class="social-name"> E-MAIL </p>
+                            </div>
+                            </a>
+
+
+                            <a href="https://www.linkedin.com/in/n64/">
+                            <div class="social">
+                                <img src="images/home/linkedin-icon.png">
+                                <p class="social-name"> LINKEDIN </p>
+                            </div>
+                        </a>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="sayhello-container">
+
+                    <p class="hello"> SAY HELLO</p>
+                    <p class="email"> (973) 433-6419‬ </p>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script>
+
+        $('#work').click(function () {
+            $('.gdwork').fadeOut();
+            $('.gd-logos').fadeOut();
+            $('.aboutme-containter').fadeOut();
+            $('.uxwork').delay(500).fadeIn();
+            $('.uxwork').fadeTo("fast", 1.00);
+
+
+        });
+
+
+
+        $('#logofolio').click(function () {
+
+
+            $('.uxwork').fadeTo("fast", 0.00);
+
+            $('.aboutme-containter').fadeOut();
+
+            $('.gdwork').delay(500).fadeIn();
+
+
+        });
+
+
+
+        $('#about').click(function () {
+            $('.gdwork').fadeOut();
+            $('.gd-logos').fadeOut();
+            $('.uxwork').fadeTo("fast", 0.00);
+
+            $('.aboutme-containter').delay(500).fadeIn();
+
+
+        });
+
+
+
+
+
+
+
+        $('.gdwork img').click(function () {
+            $('.gdwork').fadeOut();
+            $('.gd-logos').delay(500).fadeIn();
+
+        });
+
+
+
+
+        $('.back').click(function () {
+            $('.gd-logos').fadeOut();
+            $('.gdwork').delay(500).fadeIn();
+
+        });
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+    <script>
+        (function () {
+            // Add event listener
+            document.addEventListener("mousemove", parallax);
+            const elem = document.querySelector("#parallax");
+            // Magic happens here
+            function parallax(e) {
+                let _w = window.innerWidth / 2;
+                let _h = window.innerHeight / 2;
+                let _mouseX = e.clientX;
+                let _mouseY = e.clientY;
+                let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+                let _depth2 = `${50 - (_mouseX - _w) * 0.015}% ${50 - (_mouseY - _h) * 0.02}%`;
+                let _depth3 = `${50 - (_mouseX - _w) * 0.03}% ${50 - (_mouseY - _h) * 0.03}%`;
+                let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+                console.log(x);
+                elem.style.backgroundPosition = x;
+            }
+
+        })();
+
+    </script>
+
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("switch");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Mobile view-->
+
+
+
+    <!-- Simulate a smartphone / tablet look -->
+    <div class="mobile-container">
+
+
+
+
+        <div class="content">
+
+            <div class="about">
+
+                <img class="photo" src="images/home/profilepic.png">
+
+                <h1 class="title"> NORMAN SMART </h1>
+
+                <p class="sub-title">I love creating simple and meaningful experiences for people.</p>
+
+
+
+                <div class="social-container">
+
+
+                    <a href="images/home/resume.pdf" target="_blank">
+
+                        <div class="social">
+                            <img src="images/home/resume-icon.png">
+                            <p class="social-name"> RESUME </p>
+                        </div>
+                    </a>
+
+
+                    <a href="mailto: normansmart14@gmail.com">
+
+                        <div class="social">
+                            <img src="images/home/email-icon.png">
+                            <p class="social-name"> E-MAIL </p>
+                        </div>
+                    </a>
+
+
+
+                    <a href="https://www.linkedin.com/in/n64/">
+                        <div class="social">
+                            <img src="images/home/linkedin-icon.png">
+                            <p class="social-name"> LINKEDIN </p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="work-container-mobile">
+
+                <a href="proc.html">
+                    <div class="work-image">
+                        <img class="image" src="images/home/regimenworld.png">
+                    </div>
+                </a>
+
+
+
+                <a href="proc.html">
+                    <div class="project-description">
+                        <br>
+                        <h1> REGIMEN </h1>
+
+                        <p> <b> COMPOSITION:</b> Mobile / Web App </p>
+                        <br>
+
+                        <p> <b> DESCRIPTION:</b> Helps people keep consistent with daily activities </p>
+                        <br>
+
+                        <p> <b> EXPLORATION TIME:</b> ∼10 mins </p>
+                        <br>
+                        <br>
+                        <P> <u> EXPLORE </u> </P>
+                        <br>
+                        <br>
+                    </div>
+
+                </a>
+
+
+            </div>
+
+
+
+
+            <div class="work-container-mobile">
+
+                <a href="fitmi.html">
+                    <div class="work-image">
+                        <img class="image" src="images/home/daprworld.png">
+                    </div>
+                </a>
+
+
+
+                <a href="fitmi.html">
+                    <div class="project-description">
+                        <br>
+                        <h1> DAPR </h1>
+
+                        <p> <b> COMPOSITION:</b> Mobile </p>
+                        <br>
+
+                        <p> <b> DESCRIPTION:</b> Fashion based social media catalog </p>
+                        <br>
+
+                        <p> <b> EXPLORATION TIME:</b> ∼15 mins </p>
+                        <br>
+                        <br>
+                        <P> <u> EXPLORE </u> </P>
+                        <br>
+                        <br>
+                    </div>
+
+                </a>
+
+
+            </div>
+
+
+
+            <div class="work-container-mobile">
+
+                <a href="bunkbud.html">
+                    <div class="work-image">
+                        <img class="image" src="images/home/bunkbudworld.png">
+                    </div>
+                </a>
+
+
+
+                <a href="bunkbud.html">
+                    <div class="project-description">
+                        <br>
+                        <h1> PROC </h1>
+
+                        <p> <b> COMPOSITION:</b> Mobile </p>
+                        <br>
+
+                        <p> <b> DESCRIPTION:</b> Helps people find roommates and keep them </p>
+                        <br>
+
+                        <p> <b> EXPLORATION TIME:</b> ∼7 mins </p>
+                        <br>
+                        <br>
+                        <P> <u> EXPLORE </u> </P>
+                        <br>
+                        <br>
+                    </div>
+
+                </a>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="logofolio-mobile">
+
+                <div class="logo-title">
+                    <h2> LOGOFOLIO</h2>
+                </div>
+
+
+                <img src="images/home/logo display/3ducators.png">
+                <img src="images/home/logo display/batterup.png">
+                <img src="images/home/logo display/bunkbud.png">
+                <img src="images/home/logo display/fitmi.png">
+                <img src="images/home/logo display/jovan.png">
+                <img src="images/home/logo display/langbits.png">
+                <img src="images/home/logo display/proc.png">
+                <img src="images/home/logo display/shan yang.png">
+                <img src="images/home/logo display/thimblecad.png">
+
+
+            </div>
+
+
+            <!-- End smartphone / tablet look -->
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

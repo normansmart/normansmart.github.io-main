@@ -1,0 +1,1191 @@
+html , body{
+  position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #060927;
+    font-family: 'Lato', sans-serif;
+
+overflow: hidden;
+ }
+
+
+a{
+  text-decoration: none;
+  color: #111C2B;
+}
+
+
+
+
+ .mobile-container {
+
+  display: none;
+
+}
+
+
+
+
+ .body-container{
+   width: 100%;
+   height: 100%;
+
+ }
+
+ #parallax {
+  position: absolute;
+  width: 102%;
+  height: 100vh;
+  background-image:  url("../images/home/star\ parallax\ 2.png"), url("../images/home/star\ parallax\ 1.png"), url("../images/home/star\ canvas.png");
+  background-repeat: repeat;
+  background-position: center;
+ min-height: 102%;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**  Section for my photos and descriptions of each category:
+UX/UI and graphic design.  **/
+
+
+/* containter for the entire descriptor section*/
+ .description-container{
+   width: 40%;
+   height: 100%;
+   float: left;
+z-index: 2;
+position: absolute;
+display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+
+ /* UX descriptor*/
+ .title-container{
+width: 100%;
+margin-left: 25%;
+
+
+ }
+
+
+ .title{
+  
+   color: white;
+   font-family: 'Lato', sans-serif;
+
+   font-weight: 300;
+   font-size: 5.5vw; 
+  margin: 0;
+ margin-bottom: 20px;
+   letter-spacing: 1px;
+ }
+
+ .sub-title{
+
+  color: white;
+  font-family: 'Lato', sans-serif;
+
+   font-weight: 400;
+   font-size: 1.4vw; 
+  margin-top: 5px;
+ }
+
+
+
+
+ /* UX descriptor end*/
+
+
+
+
+/*ux design graph*/
+.project-container{
+  width: 60%;
+  height: 100%;
+  float: right;
+z-index: 2;
+display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#switch{
+  width: 100%;
+  height: 150px; 
+
+ position: relative;
+ left: 0%;
+
+text-align: center;
+}
+
+
+.btn {
+
+ width: 29%;
+ height: 150px;
+
+  text-align: center;
+  text-decoration: none;
+
+ border: none;
+  outline: none;
+ background: none;
+color: white;
+  cursor: pointer;
+  font-size: 1.1vw;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  opacity: .5;
+ 
+
+  font-family: 'Lato', sans-serif;
+
+
+
+}
+
+
+.button{
+
+width: 40%;
+margin-bottom: 20px;
+
+
+}
+
+
+#work{
+  position: relative;
+  bottom: 0px;
+}
+
+#logofolio{
+  position: relative;
+  bottom: 0px;
+}
+
+
+.active, .btn:hover {
+
+border: white 2px solid;
+border-radius: 10px;
+
+  opacity: 1;
+}
+
+
+
+
+.uxwork{
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+
+ 
+z-index: 1;
+}
+
+                 
+
+.uxwork img{
+  position: absolute;
+  margin: 0 auto;
+  animation-name: stretch;
+  animation-timing-function: ease-out;         
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+
+
+
+
+
+@keyframes rotateCounterClockwiseouter {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+  
+  }
+  100% {
+    transform: rotate(-360deg);
+  
+  }
+}
+
+
+
+
+@keyframes rotateCounterClockwisemid {
+  0% {
+    transform: rotate(120deg);
+  }
+  50% {
+  
+  }
+  100% {
+    transform: rotate(-240deg);
+  
+  }
+}
+
+
+
+@keyframes rotateCounterClockwiseinner {
+  0% {
+    transform: rotate(250deg);
+  }
+  50% {
+  
+  }
+  100% {
+    transform: rotate(-110deg);
+  
+  }
+}
+
+
+
+
+.ring {
+  position: absolute;
+  left: 5vw;
+  margin-left: -100px;
+	width: 40vw;
+  height: 40vw;
+
+  border-radius: 50%;
+ border: solid .5px rgba(255, 255, 255, 0.123);
+ background-color: #fffffc05;
+}
+
+.dot {
+  position: relative;
+  height: 45vw;
+  width: 40px;
+  top: -2.5vw;
+  left: 50%;
+	margin-left: -20px;
+
+
+}
+  
+  .dot:before {
+    display: block;
+    content: '';
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    box-shadow: 0 2px 3px rgba(0,0,0,.1);
+
+  }
+
+
+.dot--outer {
+  animation: rotateCounterClockwiseouter 550s linear infinite;
+}
+
+
+
+.fitmi{
+  position: relative;
+  height: 5vw;
+  width: 5vw;
+    top: 0px;
+    z-index: 1;
+
+}
+
+
+
+
+.fitmi:hover{
+  opacity: 1;
+}
+
+
+
+
+
+#inner-circle1{
+  width: 30vw;
+  height: 30vw;
+  left: 10vw;
+  top: 5vw;
+
+  animation: rotateCounterClockwiseouter 600s linear infinite;
+}
+
+
+
+
+.proc{
+  position: relative;
+  height: 5vw;
+  width: 5vw;
+    top: 0px;
+    z-index: 1;
+
+}
+
+
+.dot--mid {
+ 
+  height: 35vw;
+
+  animation: rotateCounterClockwisemid 500s linear infinite;
+}
+
+
+
+
+
+
+
+
+#inner-circle2{
+  width: 20vw;
+  height: 20vw;
+  left: 15vw;
+  top: 10vw;
+  animation: rotateCounterClockwiseouter 600s linear infinite;
+
+}
+
+
+
+.bunkbud{
+  position: relative;
+  height: 4vw;
+  width: 4vw;
+    top: 0px;
+    z-index: 1;
+
+
+}
+
+
+
+
+.dot--inner {
+ 
+  height: 24vw;
+
+
+  animation: rotateCounterClockwiseinner 400s linear infinite;
+}
+
+
+
+
+#inner-circle3{
+  width: 10vw;
+  height: 10vw;
+  left: 20.2vw;
+  top: 15vw;
+  background-color: #FFFFFC;
+  border: none;
+  line-height: 14vw;
+  text-align: center;
+}
+
+.portfolio{
+  width: 100%;
+left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.bunkbud:hover{
+  opacity: 1;  
+  
+}
+
+
+
+.proc:hover{
+  opacity: 1;
+}
+
+
+
+
+svg{
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  top: 0%;
+  left: 0;
+  margin: 0;
+  z-index: 0;
+  opacity: .8;
+
+  stroke: #ffffff;
+
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+  
+  }
+  100% {
+    transform: scale(1.04);
+
+  }
+}
+
+
+@keyframes stretch2 {
+  0% {
+    transform: scale(1);
+  }
+
+
+  100%{
+    transform: scale(1.02);
+  }
+  
+}
+
+
+
+/* graphic design grid */
+
+.gdwork{
+
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+
+  display: none;
+  z-index: 2;
+}
+
+.gdwork img{
+  position: absolute;
+  margin: 0 auto;
+  animation-name: stretch;
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  z-index: 1;
+}
+
+
+#ed{
+  width: 15%;
+  height: 15%;
+  top: 0%;
+  left: 40%;
+  animation-duration: 1.5s;
+}
+
+.gdwork img:hover{
+  cursor: pointer;
+}
+
+
+#proc{
+  width: 13%;
+  height: 13%;
+  top: 15%;
+  left: 20%;
+  animation-duration: 1.2s;
+}
+
+
+#langbits{
+  width: 10%;
+  height: 10%;
+  top: 30%;
+  left: 5%;
+  animation-duration: 1.3s;
+}
+
+#bunk{
+  width: 15%;
+  height: 15%;
+  top: 40%;
+  left: 45%;
+  animation-duration: 1.5s;
+}
+
+#batter{
+  width: 12%;
+  height: 12%;
+  top: 60%;
+  left: 70%;
+  animation-duration: 1.5s;
+}
+
+#fit{
+  width: 13%;
+  height: 13%;
+  top: 15%;
+  left: 75%;
+  animation-duration: 1.2s;
+}
+
+#jovan{
+  width: 13%;
+  height: 13%;  
+  top: 80%;
+  left: 80%;
+  animation-duration: 1.5s;
+}
+
+#shan{
+  width: 12%;
+  height: 12%;
+  top: 60%;
+  left: 25%;
+  animation-duration: 1.3s;
+}
+
+#thimble{
+  width: 10%;
+  height: 10%;
+  top: 80%;
+  left: 15%;
+  animation-duration: 1.2s;
+}
+
+
+
+/*LEFT SIDE. 
+logo displays to be seen upon click of gd placeholders */ 
+
+.gd-logos{
+  width: 40vw;
+
+position: absolute;
+
+
+z-index: 2;
+
+display: none;
+
+}
+
+.gd-logos img{
+width: 100%;
+box-shadow: 7px 7px 8px 0  #35353538;
+border-radius: 20px;
+  position: relative;
+  
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 40vw;
+  height: 40vw;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next, .back{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.274) ;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .back:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.back{
+  width: 2vw ;
+  height: 2vw;
+  top: 85%;
+  left: 19vw;
+
+  font-size: 1.5vw;
+  border-radius: 100px ;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+.aboutme-containter{
+  position: absolute;
+  width: 45vw;
+  height: 90vh;
+  
+ background-image:  url("../images/home/aboutme-background.png");
+ 
+  border-radius: 20px;
+display: none;
+z-index: 3;
+ 
+}
+
+
+
+.aboutme{
+  width: 100%;
+
+
+}
+
+
+
+
+
+.profilepic{
+  width: 30%;
+ margin-left: 35%;
+ margin-top: 30px;
+
+}
+
+
+.about-container{
+width: 100%;
+font-family: 'Lato', sans-serif;
+color:#111A27;
+
+
+text-align: center;
+}
+
+
+.about{
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+
+}
+
+.social-container{
+  width: 100%;
+  
+}
+
+
+.social{
+  width: 25%;
+  display: inline-block;
+text-align: center;
+ 
+}
+
+
+
+
+.social-name{
+
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.sayhello-container{
+
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 700;
+color: #111A27;
+text-align: center;
+
+}
+
+
+
+.hello{
+  width: 100%;
+  float: right;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 700;
+color: #111A27;
+
+
+
+}
+
+
+.email{
+  width: 100%;
+  font-size: 1.9vw;
+  font-weight: 600;
+  text-align: center;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1100px) {
+ 
+body{
+  overflow: scroll;
+  overflow-x: hidden;
+  background-image: none;
+}
+
+
+
+  .body-container {
+display: none;
+  }
+
+
+  .mobile-container {
+    max-width: inherit;
+    max-height: inherit;
+
+    margin: auto;
+  
+    color:  #111A27;
+    display: block;
+
+  }
+
+  
+
+ a{
+   text-decoration: none;
+   color: #111C2B;
+ }
+
+
+.content{
+  width: 90%;
+  margin: auto;
+  background-image:  url("../images/home/aboutme-background.png");
+ 
+}
+
+.content p{
+ 
+   font-family: 'Lato', sans-serif;
+
+ 
+  line-height: 50px;
+}
+
+
+
+.about{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+ 
+  }
+  
+
+  .photo{
+    width: 40%;
+    margin-top: 10%;
+  }
+
+  
+.title{
+    width: 100%;
+     color: #111A27;
+
+     font-weight: 500;
+   
+     margin-top: 60px;
+  }
+  
+.sub-title{
+  width: 80%;
+  margin: auto;
+    color: #111A27;
+     font-weight: 400;
+    font-size: 1.5em;
+  
+}
+  
+.social-container{
+  width: 100%;
+  margin-top: 60px;
+}
+
+
+.social-name{
+  font-size: .7em;
+  margin: 0px;
+}
+
+
+
+.work-container-mobile{
+  width: 90%;
+margin: auto;
+
+margin-top: 100px;
+margin-bottom: 300px;
+
+ 
+}
+
+.work-image{
+  width: 100%;
+  text-align: center;
+}
+
+.image{
+  width: 60%;
+  border-radius: 5px;
+
+}
+
+.project-description{
+
+  border-radius: 25px ;
+  margin-top: 60px;
+  border-bottom: #111A27 solid 1px;
+}
+
+
+.project-description h1{
+  margin: auto;
+  color: #111A27;
+ width: 100%;
+
+  font-weight: 400;
+  font-size: 4em;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+
+.project-description p{
+
+  margin: auto;
+ 
+ width: 90%;
+ margin-top: 0px;
+  color: #111A27;
+   font-weight: 400;
+  font-size: 1.8em;
+  line-height: 40px;
+}
+
+
+
+
+
+
+.logofolio-mobile{
+  width: 100%;
+  
+text-align: center;
+}
+
+
+.logo-title h2{
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.logofolio-mobile img{
+  width: 80%;
+ 
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0  #3535353f;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:500px) {
+ 
+  body{
+    overflow: scroll;
+    overflow-x: hidden;
+    background-image: none;
+  }
+  
+  
+  
+    .body-container {
+  display: none;
+    }
+  
+  
+    .mobile-container {
+      max-width: inherit;
+      max-height: inherit;
+  
+      margin: auto;
+    
+      color:  #ffffff;
+      display: block;
+  
+    }
+  
+    
+  
+  
+  
+  
+  .content{
+    width: 90%;
+    margin: auto;
+   
+  }
+  
+  .content p{
+   
+     font-family: 'Lato', sans-serif;
+  
+   
+    line-height: 50px;
+  }
+  
+  
+  
+  .about{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+   
+    }
+    
+  
+    .photo{
+      width: 40%;
+    }
+  
+    
+  .title{
+      width: 100%;
+       color: white;
+  
+       font-weight: 500;
+     
+       margin-top: 60px;
+    }
+    
+  .sub-title{
+    width: 80%;
+    margin: auto;
+      color: rgb(255, 255, 255);
+       font-weight: 400;
+      font-size: 1.5em;
+    
+  }
+    
+  .social-container{
+    width: 100%;
+    margin-top: 60px;
+  }
+  
+  
+  .social-name{
+    font-size: .7em;
+  }
+  
+  
+  
+  .work-container-mobile{
+    width: 90%;
+  margin: auto;
+  
+  margin-top: 100px;
+  
+   
+  }
+  
+  .work-image{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .image{
+    width: 60%;
+    border-radius: 5px;
+  
+  }
+  
+  .project-description{
+    background: #6d3838;
+    border-radius: 25px ;
+  }
+  
+  
+  .project-description h1{
+    margin: auto;
+    color: #4e2828;
+   width: 100%;
+  
+    font-weight: 600;
+    font-size: 100px;
+  
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+
+
+
+  .project-description p{
+  
+    margin: auto;
+   
+   width: 90%;
+   margin-top: 0px;
+    color: #240a0a;
+     font-weight: 400;
+    font-size: 90px;
+    line-height: 40px;
+  }
+  
+  
+  
+  
+  
+  
+  .logofolio-mobile{
+    width: 100%;
+    
+  
+  }
+  
+  
+  .logo-title h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .logofolio-mobile img{
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0  #3535353f;
+  }
+  
+  
+  
+  
+  
+  
+  
+  }
