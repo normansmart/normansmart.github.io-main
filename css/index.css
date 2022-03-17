@@ -67,7 +67,7 @@ UX/UI and graphic design.  **/
    float: left;
   z-index: 2;
   position: absolute;
-  background-color: #e0e2eb;
+  background-color: #F1F5FB;
  }
 
 
@@ -105,11 +105,6 @@ width: 100%;
 
 
 
-.links{
-  width: 100%;
-  position: absolute;
-  bottom: 0%;
-}
 
 
 
@@ -146,7 +141,7 @@ width: 100%;
 .btn {
 
  width: 100%;
- height: 90px;
+ height: 70px;
   text-decoration: none;
 
  border: none;
@@ -154,11 +149,18 @@ width: 100%;
  background: none;
  color: rgb(46, 39, 39);
   cursor: pointer;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   transition: 0.3s;
   opacity: .5;
   font-family: 'Lato', sans-serif;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 
@@ -167,6 +169,8 @@ width: 100%;
 width: 10%;
 
 vertical-align: middle;
+position: absolute;
+left: 70px;
 
 
 }
@@ -183,16 +187,27 @@ vertical-align: middle;
 }
 
 
-.active, .btn:hover {
+.active{
 
 border-top: rgb(0, 0, 0) 2px solid;
 border-bottom: rgb(0, 0, 0) 2px solid;
 
 
   opacity: 1;
+
+  font-weight: 600;
 }
 
 
+.links{
+
+  width: 100%;
+
+position: absolute;
+bottom: 15px;
+
+
+}
 
 
 
