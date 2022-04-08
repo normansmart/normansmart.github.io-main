@@ -62,7 +62,7 @@ UX/UI and graphic design.  **/
 
 /* containter for the entire descriptor section*/
  .description-container{
-   width: 25%;
+   width: 20%;
    height: 100%;
    float: left;
   z-index: 2;
@@ -86,7 +86,7 @@ width: 100%;
    font-family: 'Lato', sans-serif;
 
    font-weight: 600;
-   font-size: 40px; 
+   font-size: 28px; 
    margin-bottom: 0px;
    text-align: center;
    
@@ -99,7 +99,7 @@ width: 100%;
   font-family: 'Lato', sans-serif;
 
    font-weight: 400;
-   font-size: 25px; 
+   font-size: 22px; 
   margin-top: 5px;
  }
 
@@ -149,7 +149,7 @@ width: 100%;
  background: none;
  color: rgb(46, 39, 39);
   cursor: pointer;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 400;
   transition: 0.3s;
   opacity: .5;
@@ -166,11 +166,9 @@ width: 100%;
 
 .button{
 
-width: 10%;
-
-vertical-align: middle;
+width: 7%;
 position: absolute;
-left: 70px;
+left: 25%;
 
 
 }
@@ -313,11 +311,11 @@ z-index: 1;
   margin-left: -100px;
 	width: 40vw;
   height: 40vw;
+  border-radius: 100%;
 
-  border-radius: 50%;
- border: solid .5px rgba(255, 255, 255, 0.123);
- background-color: #fffffc05;
+ background-color: #d3573817;
 }
+
 
 .dot {
   position: relative;
@@ -329,7 +327,8 @@ z-index: 1;
 
 
 }
-  
+
+
   .dot:before {
     display: block;
     content: '';
@@ -374,6 +373,10 @@ z-index: 1;
   top: 5vw;
 
   animation: rotateCounterClockwiseouter 600s linear infinite;
+
+
+  background-color: #e47f4c2a;
+  
 }
 
 
@@ -410,6 +413,7 @@ z-index: 1;
   top: 10vw;
   animation: rotateCounterClockwiseouter 600s linear infinite;
 
+  background-color: #f49f632f;
 }
 
 
@@ -441,13 +445,17 @@ z-index: 1;
 #inner-circle3{
   width: 10vw;
   height: 10vw;
-  left: 20.2vw;
+  left: 20vw;
   top: 15vw;
-  background-color: #FFFFFC;
+  background-color: #F9D796;
   border: none;
-  line-height: 14vw;
+ 
   text-align: center;
 }
+
+
+
+
 
 .portfolio{
   width: 100%;
